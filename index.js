@@ -24,7 +24,7 @@ const PostSchema = require('./lists/post.js');
 const keystone = new Keystone({
   name: "Role based access demo",
   adapter: new Adapter(adapterConfig),
-  'cookie secret': process.env.COOKIE_SECRET,
+  cookieSecret: process.env.COOKIE_SECRET,
 });
 
 keystone.createList('Admin', {
